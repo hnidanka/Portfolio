@@ -60,7 +60,7 @@ Step| Action | Expected result |
 | 6. | Compare "name" key value with the name provided in request body | The name from request body matches the name value retrieved from request response |
 | 7. | Open Trello in web browser | Trello web aplication is opened |
 | 8. | Ensure you can see all workspace boards  | All workspace boards are visible |
-| 9. | Verify that created board in step 3 is present on the list of boards | Board is present; Board Name matches the name provided in the request body <br><br>![Board in the Trello web application]('../Assets/TC-02-webApp-created-board.png')|
+| 9. | Verify that created board in step 3 is present on the list of boards | Board is present; Board Name matches the name provided in the request body <br><br>![Board in the Trello web application](../Assets/TC-02-webApp-created-board.png)|
 
 
 ### 📌 Summary & Notes
