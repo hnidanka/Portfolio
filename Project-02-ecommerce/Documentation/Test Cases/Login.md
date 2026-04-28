@@ -22,7 +22,7 @@ Step| Action | Expected result |
 | 1. | Ensure you can see the Log in form | Log in page is opened|
 | 2. | Fill in the 'Email' field with valid value (E.g. 'anna2001K@gmail.com') | Field 'Email' is populated witha data |
 | 3. | Fill in the 'Password' field with valid value ('E.g. 'Ann870@K') | Field 'Password' is populated with a value. Provided value is masked with dots |
-| 4. | Click on the 'Login' button | Message regarding successful login is displayed in the right bottom corner. User is logged into the system and redirected to the "Main page"
+| 4. | Click on the 'Login' button | Message regarding successful login is displayed in the right bottom corner. User is logged into the system and redirected to the 'Home page' |
 ----------
 
 # Test Case TC-12
@@ -100,4 +100,30 @@ Step| Action | Expected result |
 | 7. | Click on the 'Login' button | Button is disabled. User is not logged in to the system. Inline validation message regarding required email remains visible |
 | 8. | Clear 'Password" field value and leave it empty | 'Password' field value is empty .Inline validation message regarding required password is displayed |
 | 9. | Click on the 'Login' button | 'Login' button is disabled. User is not logged in to the system, Inline messages regarding missing required 'Email' field and 'Password' field values are displayed |
+----------
+
+# Test Case TC-14
+
+**id:** TC-14
+**Title:** Log in form Accessibility testing
+**Priority:** `High`  
+**Test Data:** 
+* Email: anna2001K@gmail.com
+* Password: Ann870@K
+
+
+
+### Preconditions
+1. Open: https://rahulshettyacademy.com/client/#/auth/register
+2. User must already be registered in the system
+
+
+### Steps:
+Step| Action | Expected result |
+| :--- | :--- | :--- |
+| 1. | Ensure you can see the Log in form | Log in page is opened|
+| 2. | Fill in the 'Email' field with valid value (E.g. 'anna2001K@gmail.com') | Field 'Email' is populated witha data |
+| 3. | Press the 'Tab' key | Ensure input focus is moved to the 'Password' field |
+| 4. | Fill in the 'Password' field with valida data (E.g. 'Ann870@K') | 'Password' field is populated with a valid data. Input value is masked with dots |
+| 5. | Press the 'Enter' key | User is successfully legged into the system and redirected to the 'Home page'. Message regarding successfull login is displayed in the right bottom corner |
 ----------
